@@ -4,7 +4,7 @@
 
 ## 原作動畫與互動
 
-[開啟互動還原展示](demo/index.html)
+[開啟互動還原展示](https://tokizakisora.github.io/genetic_rampage/demo/index.html)
 
 下載本資料夾後，以瀏覽器開啟 `demo/index.html` 即可操作。部署至 GitHub Pages 後，也可由此連結進入。
 
