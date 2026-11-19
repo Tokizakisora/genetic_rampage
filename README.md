@@ -6,7 +6,7 @@
 
 [開啟互動還原展示](https://tokizakisora.github.io/genetic_rampage/demo/index.html)
 
-下載本資料夾後，以瀏覽器開啟 `demo/index.html` 即可操作。部署至 GitHub Pages 後，也可由此連結進入。
+下載demo資料夾後，以瀏覽器開啟 `index.html` 即可操作（亦可點擊上方連結）。
 
 | 開始按鈕浮動 | 故事逐字顯示 | 選關視窗開關 |
 | --- | --- | --- |
