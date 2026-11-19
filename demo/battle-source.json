@@ -1,0 +1,3110 @@
+{
+  "viewport": [
+    400,
+    850
+  ],
+  "runtimeBoundaryBehavior": "Sprite.registerChange -> hitEdgeAbstract -> MoveIntoBounds",
+  "runtimeSource": "https://github.com/mit-cml/appinventor-sources/blob/master/appinventor/components/src/com/google/appinventor/components/runtime/Sprite.java",
+  "scm": {
+    "$Name": "story_fight",
+    "$Type": "Form",
+    "$Version": "31",
+    "AppName": "app_inventor",
+    "BackgroundImage": "openate_background.jpg",
+    "Theme": "Classic",
+    "Title": "戰鬥",
+    "TitleVisible": "False",
+    "Uuid": "0",
+    "$Components": [
+      {
+        "$Name": "畫布1",
+        "$Type": "Canvas",
+        "$Version": "15",
+        "BackgroundImage": "grass_background.jpg",
+        "Height": "-2",
+        "Width": "-2",
+        "Uuid": "358419402",
+        "$Components": [
+          {
+            "$Name": "恐龍",
+            "$Type": "ImageSprite",
+            "$Version": "8",
+            "Height": "60",
+            "Width": "60",
+            "Picture": "dinosaur_right.png",
+            "Rotates": "False",
+            "Uuid": "100532992",
+            "X": "53",
+            "Y": "301",
+            "Z": "2.0"
+          },
+          {
+            "$Name": "BOSS",
+            "$Type": "ImageSprite",
+            "$Version": "8",
+            "Height": "70",
+            "Width": "70",
+            "Picture": "boss1_left.png",
+            "Rotates": "False",
+            "Uuid": "-466772904",
+            "X": "285",
+            "Y": "50",
+            "Z": "2.0"
+          },
+          {
+            "$Name": "地板",
+            "$Type": "ImageSprite",
+            "$Version": "8",
+            "Height": "10",
+            "Width": "-2",
+            "Picture": "a.png",
+            "Uuid": "-681178713",
+            "Visible": "False",
+            "X": "0",
+            "Y": "350"
+          },
+          {
+            "$Name": "恐龍HP1",
+            "$Type": "ImageSprite",
+            "$Version": "8",
+            "Height": "18",
+            "Width": "100",
+            "Picture": "heart_5.png",
+            "Uuid": "1716928179",
+            "X": "171",
+            "Y": "168"
+          },
+          {
+            "$Name": "BOSS_HP",
+            "$Type": "ImageSprite",
+            "$Version": "8",
+            "Height": "10",
+            "Width": "100",
+            "Picture": "boss_HP_max.png",
+            "Uuid": "988049756",
+            "X": "95",
+            "Y": "103"
+          },
+          {
+            "$Name": "暫存圖像用",
+            "$Type": "ImageSprite",
+            "$Version": "8",
+            "Uuid": "1260480403",
+            "Visible": "False",
+            "X": "115",
+            "Y": "48"
+          },
+          {
+            "$Name": "回首頁",
+            "$Type": "ImageSprite",
+            "$Version": "8",
+            "Height": "70",
+            "Width": "70",
+            "Picture": "house.png",
+            "Uuid": "-1807045419",
+            "Visible": "False",
+            "X": "90",
+            "Y": "151"
+          },
+          {
+            "$Name": "玩家子彈_1",
+            "$Type": "Ball",
+            "$Version": "8",
+            "PaintColor": "&HFFFF0000",
+            "Uuid": "-209871720",
+            "Visible": "False",
+            "X": "0",
+            "Y": "0"
+          },
+          {
+            "$Name": "玩家子彈_2",
+            "$Type": "Ball",
+            "$Version": "8",
+            "PaintColor": "&HFFFF0000",
+            "Uuid": "-1981269150",
+            "Visible": "False",
+            "X": "0",
+            "Y": "0"
+          },
+          {
+            "$Name": "玩家子彈_3",
+            "$Type": "Ball",
+            "$Version": "8",
+            "PaintColor": "&HFFFF0000",
+            "Uuid": "-1982654047",
+            "Visible": "False",
+            "X": "0",
+            "Y": "0"
+          },
+          {
+            "$Name": "玩家子彈_4",
+            "$Type": "Ball",
+            "$Version": "8",
+            "PaintColor": "&HFFFF0000",
+            "Uuid": "2050824268",
+            "Visible": "False",
+            "X": "0",
+            "Y": "0"
+          },
+          {
+            "$Name": "玩家子彈_5",
+            "$Type": "Ball",
+            "$Version": "8",
+            "PaintColor": "&HFFFF0000",
+            "Uuid": "-173972732",
+            "Visible": "False",
+            "X": "0",
+            "Y": "0"
+          },
+          {
+            "$Name": "玩家子彈_6",
+            "$Type": "Ball",
+            "$Version": "8",
+            "PaintColor": "&HFFFF0000",
+            "Uuid": "836812046",
+            "Visible": "False",
+            "X": "0",
+            "Y": "0"
+          },
+          {
+            "$Name": "玩家子彈_7",
+            "$Type": "Ball",
+            "$Version": "8",
+            "PaintColor": "&HFFFF0000",
+            "Uuid": "-1352107920",
+            "Visible": "False",
+            "X": "0",
+            "Y": "0"
+          },
+          {
+            "$Name": "玩家子彈_8",
+            "$Type": "Ball",
+            "$Version": "8",
+            "PaintColor": "&HFFFF0000",
+            "Uuid": "1343253845",
+            "Visible": "False",
+            "X": "0",
+            "Y": "0"
+          },
+          {
+            "$Name": "玩家子彈_9",
+            "$Type": "Ball",
+            "$Version": "8",
+            "PaintColor": "&HFFFF0000",
+            "Uuid": "-415891973",
+            "Visible": "False",
+            "X": "0",
+            "Y": "0"
+          },
+          {
+            "$Name": "玩家子彈_10",
+            "$Type": "Ball",
+            "$Version": "8",
+            "PaintColor": "&HFFFF0000",
+            "Uuid": "-856510341",
+            "Visible": "False",
+            "X": "0",
+            "Y": "0"
+          },
+          {
+            "$Name": "boss子彈_1",
+            "$Type": "Ball",
+            "$Version": "8",
+            "PaintColor": "&HFF0000FF",
+            "Uuid": "1908771860",
+            "Visible": "False",
+            "X": "0",
+            "Y": "0"
+          },
+          {
+            "$Name": "BOSS攻擊背景",
+            "$Type": "ImageSprite",
+            "$Version": "8",
+            "Uuid": "-241270274",
+            "Visible": "False",
+            "X": "129",
+            "Y": "130"
+          }
+        ]
+      },
+      {
+        "$Name": "操作區",
+        "$Type": "HorizontalArrangement",
+        "$Version": "4",
+        "AlignHorizontal": "2",
+        "BackgroundColor": "&H00FFFFFF",
+        "Width": "-2",
+        "Uuid": "-58198713",
+        "$Components": [
+          {
+            "$Name": "移動操作",
+            "$Type": "VerticalArrangement",
+            "$Version": "4",
+            "AlignHorizontal": "3",
+            "AlignVertical": "2",
+            "BackgroundColor": "&H00FFFFFF",
+            "Height": "160",
+            "Width": "-2",
+            "Uuid": "1974273942",
+            "$Components": [
+              {
+                "$Name": "向上",
+                "$Type": "Canvas",
+                "$Version": "15",
+                "BackgroundColor": "&H00FFFFFF",
+                "Height": "50",
+                "Width": "-2",
+                "Uuid": "1050394374",
+                "$Components": [
+                  {
+                    "$Name": "往上鍵",
+                    "$Type": "ImageSprite",
+                    "$Version": "8",
+                    "Height": "50",
+                    "Width": "50",
+                    "Picture": "up.png",
+                    "Uuid": "1990804342",
+                    "X": "0",
+                    "Y": "0"
+                  }
+                ]
+              },
+              {
+                "$Name": "水平配置1",
+                "$Type": "HorizontalArrangement",
+                "$Version": "4",
+                "AlignHorizontal": "3",
+                "AlignVertical": "2",
+                "BackgroundColor": "&H00FFFFFF",
+                "Width": "-2",
+                "Uuid": "-86476041",
+                "$Components": [
+                  {
+                    "$Name": "橫向移動",
+                    "$Type": "Canvas",
+                    "$Version": "15",
+                    "BackgroundColor": "&H00FFFFFF",
+                    "Height": "50",
+                    "Width": "-2",
+                    "Uuid": "-665720902",
+                    "$Components": [
+                      {
+                        "$Name": "往左鍵",
+                        "$Type": "ImageSprite",
+                        "$Version": "8",
+                        "Height": "50",
+                        "Width": "50",
+                        "Picture": "left.png",
+                        "Uuid": "601429558",
+                        "X": "0",
+                        "Y": "0"
+                      },
+                      {
+                        "$Name": "往右鍵",
+                        "$Type": "ImageSprite",
+                        "$Version": "8",
+                        "Height": "50",
+                        "Width": "50",
+                        "Picture": "right.png",
+                        "Uuid": "-574740181",
+                        "X": "50",
+                        "Y": "0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "$Name": "向下",
+                "$Type": "Canvas",
+                "$Version": "15",
+                "BackgroundColor": "&H00FFFFFF",
+                "Height": "50",
+                "Width": "-2",
+                "Uuid": "92591904",
+                "$Components": [
+                  {
+                    "$Name": "往下鍵",
+                    "$Type": "ImageSprite",
+                    "$Version": "8",
+                    "Height": "50",
+                    "Width": "50",
+                    "Picture": "down.png",
+                    "Uuid": "2085832812",
+                    "X": "0",
+                    "Y": "0"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "$Name": "技能列",
+            "$Type": "Canvas",
+            "$Version": "15",
+            "BackgroundColor": "&H00FFFFFF",
+            "Height": "-2",
+            "Width": "100",
+            "Uuid": "1159260336",
+            "$Components": [
+              {
+                "$Name": "技能",
+                "$Type": "ImageSprite",
+                "$Version": "8",
+                "Height": "50",
+                "Width": "40",
+                "Picture": "skill.png",
+                "Uuid": "-1157267905",
+                "X": "50",
+                "Y": "90"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "$Name": "工具列",
+        "$Type": "HorizontalArrangement",
+        "$Version": "4",
+        "AlignVertical": "3",
+        "BackgroundColor": "&H00FFFFFF",
+        "Width": "-2",
+        "Uuid": "1654396236",
+        "$Components": [
+          {
+            "$Name": "返回",
+            "$Type": "Button",
+            "$Version": "7",
+            "Height": "40",
+            "Width": "40",
+            "Image": "back.png",
+            "Uuid": "397113203"
+          }
+        ]
+      },
+      {
+        "$Name": "boss攻擊計時器",
+        "$Type": "Clock",
+        "$Version": "4",
+        "Uuid": "690072170"
+      },
+      {
+        "$Name": "向上移動計時器",
+        "$Type": "Clock",
+        "$Version": "4",
+        "TimerEnabled": "False",
+        "TimerInterval": "10",
+        "Uuid": "1856553258"
+      },
+      {
+        "$Name": "向下移動計時器",
+        "$Type": "Clock",
+        "$Version": "4",
+        "TimerEnabled": "False",
+        "TimerInterval": "10",
+        "Uuid": "1349464466"
+      },
+      {
+        "$Name": "向左移動計時器",
+        "$Type": "Clock",
+        "$Version": "4",
+        "TimerEnabled": "False",
+        "TimerInterval": "10",
+        "Uuid": "465103083"
+      },
+      {
+        "$Name": "向右移動計時器",
+        "$Type": "Clock",
+        "$Version": "4",
+        "TimerEnabled": "False",
+        "TimerInterval": "10",
+        "Uuid": "-1004467293"
+      },
+      {
+        "$Name": "旋轉特效角度變化計時器",
+        "$Type": "Clock",
+        "$Version": "4",
+        "TimerInterval": "100",
+        "Uuid": "-1759046759"
+      },
+      {
+        "$Name": "技能計時器",
+        "$Type": "Clock",
+        "$Version": "4",
+        "TimerEnabled": "False",
+        "TimerInterval": "100",
+        "Uuid": "-604388882"
+      },
+      {
+        "$Name": "飛行狀態偵測器",
+        "$Type": "Clock",
+        "$Version": "4",
+        "TimerInterval": "2",
+        "Uuid": "2111995948"
+      },
+      {
+        "$Name": "結算提示",
+        "$Type": "Notifier",
+        "$Version": "6",
+        "Uuid": "-1723605922"
+      }
+    ]
+  },
+  "scenes": {
+    "earth": {
+      "components": {
+        "story_fight": {
+          "$Name": "story_fight",
+          "$Type": "Form",
+          "$Version": 31.0,
+          "AppName": "app_inventor",
+          "BackgroundImage": "openate_background.jpg",
+          "Theme": "Classic",
+          "Title": "戰鬥",
+          "TitleVisible": "False",
+          "Uuid": 0.0
+        },
+        "畫布1": {
+          "$Name": "畫布1",
+          "$Type": "Canvas",
+          "$Version": 15.0,
+          "BackgroundImage": "grass_background.jpg",
+          "Height": 650,
+          "Width": 400,
+          "Uuid": 358419402.0
+        },
+        "恐龍": {
+          "$Name": "恐龍",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 60.0,
+          "Width": 60.0,
+          "Picture": "dinosaur_right.png",
+          "Rotates": "False",
+          "Uuid": 100532992.0,
+          "X": 53.0,
+          "Y": 555.0,
+          "Z": 2.0
+        },
+        "BOSS": {
+          "$Name": "BOSS",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 70.0,
+          "Width": 70.0,
+          "Picture": "boss1_left.png",
+          "Rotates": "False",
+          "Uuid": -466772904.0,
+          "X": 285.0,
+          "Y": 545.0,
+          "Z": 2.0
+        },
+        "地板": {
+          "$Name": "地板",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 10.0,
+          "Width": -2.0,
+          "Picture": "a.png",
+          "Uuid": -681178713.0,
+          "Visible": "False",
+          "X": 0,
+          "Y": 610.0
+        },
+        "恐龍HP1": {
+          "$Name": "恐龍HP1",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 18.0,
+          "Width": 100.0,
+          "Picture": "heart_5.png",
+          "Uuid": 1716928179.0,
+          "X": 33.0,
+          "Y": 535.0
+        },
+        "BOSS_HP": {
+          "$Name": "BOSS_HP",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 10.0,
+          "Width": 100.0,
+          "Picture": "boss_HP_max.png",
+          "Uuid": 988049756.0,
+          "X": 270.0,
+          "Y": 525.0
+        },
+        "暫存圖像用": {
+          "$Name": "暫存圖像用",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Uuid": 1260480403.0,
+          "Visible": "False",
+          "X": 115.0,
+          "Y": 48.0,
+          "Picture": "boss1_left.png"
+        },
+        "回首頁": {
+          "$Name": "回首頁",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 70.0,
+          "Width": 70.0,
+          "Picture": "house.png",
+          "Uuid": -1807045419.0,
+          "Visible": "False",
+          "X": 90.0,
+          "Y": 151.0
+        },
+        "玩家子彈_1": {
+          "$Name": "玩家子彈_1",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": -209871720.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_2": {
+          "$Name": "玩家子彈_2",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": -1981269150.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_3": {
+          "$Name": "玩家子彈_3",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": -1982654047.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_4": {
+          "$Name": "玩家子彈_4",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": 2050824268.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_5": {
+          "$Name": "玩家子彈_5",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": -173972732.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_6": {
+          "$Name": "玩家子彈_6",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": 836812046.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_7": {
+          "$Name": "玩家子彈_7",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": -1352107920.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_8": {
+          "$Name": "玩家子彈_8",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": 1343253845.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_9": {
+          "$Name": "玩家子彈_9",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": -415891973.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_10": {
+          "$Name": "玩家子彈_10",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": -856510341.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "boss子彈_1": {
+          "$Name": "boss子彈_1",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFF0000FF",
+          "Uuid": 1908771860.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "BOSS攻擊背景": {
+          "$Name": "BOSS攻擊背景",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Uuid": -241270274.0,
+          "Visible": "False",
+          "X": 129.0,
+          "Y": 130.0
+        },
+        "操作區": {
+          "$Name": "操作區",
+          "$Type": "HorizontalArrangement",
+          "$Version": 4.0,
+          "AlignHorizontal": 2.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Width": 400,
+          "Uuid": -58198713.0,
+          "Height": 160
+        },
+        "移動操作": {
+          "$Name": "移動操作",
+          "$Type": "VerticalArrangement",
+          "$Version": 4.0,
+          "AlignHorizontal": 3.0,
+          "AlignVertical": 2.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Height": 160,
+          "Width": 300,
+          "Uuid": 1974273942.0
+        },
+        "向上": {
+          "$Name": "向上",
+          "$Type": "Canvas",
+          "$Version": 15.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Height": 50,
+          "Width": 300,
+          "Uuid": 1050394374.0
+        },
+        "往上鍵": {
+          "$Name": "往上鍵",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 50.0,
+          "Width": 50.0,
+          "Picture": "up.png",
+          "Uuid": 1990804342.0,
+          "X": 175.0,
+          "Y": 0
+        },
+        "水平配置1": {
+          "$Name": "水平配置1",
+          "$Type": "HorizontalArrangement",
+          "$Version": 4.0,
+          "AlignHorizontal": 3.0,
+          "AlignVertical": 2.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Width": -2.0,
+          "Uuid": -86476041.0
+        },
+        "橫向移動": {
+          "$Name": "橫向移動",
+          "$Type": "Canvas",
+          "$Version": 15.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Height": 50,
+          "Width": 300,
+          "Uuid": -665720902.0
+        },
+        "往左鍵": {
+          "$Name": "往左鍵",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 50.0,
+          "Width": 50.0,
+          "Picture": "left.png",
+          "Uuid": 601429558.0,
+          "X": 125.0,
+          "Y": 0
+        },
+        "往右鍵": {
+          "$Name": "往右鍵",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 50.0,
+          "Width": 50.0,
+          "Picture": "right.png",
+          "Uuid": -574740181.0,
+          "X": 225.0,
+          "Y": 0
+        },
+        "向下": {
+          "$Name": "向下",
+          "$Type": "Canvas",
+          "$Version": 15.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Height": 50,
+          "Width": 300,
+          "Uuid": 92591904.0
+        },
+        "往下鍵": {
+          "$Name": "往下鍵",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 50.0,
+          "Width": 50.0,
+          "Picture": "down.png",
+          "Uuid": 2085832812.0,
+          "X": 175.0,
+          "Y": 0
+        },
+        "技能列": {
+          "$Name": "技能列",
+          "$Type": "Canvas",
+          "$Version": 15.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Height": 160,
+          "Width": 100,
+          "Uuid": 1159260336.0
+        },
+        "技能": {
+          "$Name": "技能",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 50.0,
+          "Width": 40.0,
+          "Picture": "skill.png",
+          "Uuid": -1157267905.0,
+          "X": 60.0,
+          "Y": 0
+        },
+        "工具列": {
+          "$Name": "工具列",
+          "$Type": "HorizontalArrangement",
+          "$Version": 4.0,
+          "AlignVertical": 3.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Width": -2.0,
+          "Uuid": 1654396236.0
+        },
+        "返回": {
+          "$Name": "返回",
+          "$Type": "Button",
+          "$Version": 7.0,
+          "Height": 40.0,
+          "Width": 40.0,
+          "Image": "back.png",
+          "Uuid": 397113203.0
+        },
+        "boss攻擊計時器": {
+          "$Name": "boss攻擊計時器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "Uuid": 690072170.0,
+          "TimerInterval": 250.0
+        },
+        "向上移動計時器": {
+          "$Name": "向上移動計時器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "TimerEnabled": "False",
+          "TimerInterval": 10.0,
+          "Uuid": 1856553258.0
+        },
+        "向下移動計時器": {
+          "$Name": "向下移動計時器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "TimerEnabled": "False",
+          "TimerInterval": 10.0,
+          "Uuid": 1349464466.0
+        },
+        "向左移動計時器": {
+          "$Name": "向左移動計時器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "TimerEnabled": "False",
+          "TimerInterval": 10.0,
+          "Uuid": 465103083.0
+        },
+        "向右移動計時器": {
+          "$Name": "向右移動計時器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "TimerEnabled": "False",
+          "TimerInterval": 10.0,
+          "Uuid": -1004467293.0
+        },
+        "旋轉特效角度變化計時器": {
+          "$Name": "旋轉特效角度變化計時器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "TimerInterval": 100,
+          "Uuid": -1759046759.0
+        },
+        "技能計時器": {
+          "$Name": "技能計時器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "TimerEnabled": "False",
+          "TimerInterval": 100.0,
+          "Uuid": -604388882.0
+        },
+        "飛行狀態偵測器": {
+          "$Name": "飛行狀態偵測器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "TimerInterval": 2.0,
+          "Uuid": 2111995948.0
+        },
+        "結算提示": {
+          "$Name": "結算提示",
+          "$Type": "Notifier",
+          "$Version": 6.0,
+          "Uuid": -1723605922.0
+        }
+      },
+      "globals": {
+        "global 旋轉角度計時間隔": 100,
+        "global 初始值清單": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "global bossATK": 1.0,
+        "global bossDEF": 0.0,
+        "global 玩家ATK": 1.0,
+        "global 玩家DEF": 0.0,
+        "global 玩家HP": 5.0,
+        "global bossHP": 19.0,
+        "global 小恐龍飛行狀態": 0.0
+      },
+      "presentation": {
+        "purpose": "作品介紹用戰鬥情境，角色位置經使用者授權安排",
+        "components": {
+          "story_fight": {
+            "$Name": "story_fight",
+            "$Type": "Form",
+            "$Version": 31.0,
+            "AppName": "app_inventor",
+            "BackgroundImage": "openate_background.jpg",
+            "Theme": "Classic",
+            "Title": "戰鬥",
+            "TitleVisible": "False",
+            "Uuid": 0.0
+          },
+          "畫布1": {
+            "$Name": "畫布1",
+            "$Type": "Canvas",
+            "$Version": 15.0,
+            "BackgroundImage": "grass_background.jpg",
+            "Height": 650,
+            "Width": 400,
+            "Uuid": 358419402.0
+          },
+          "恐龍": {
+            "$Name": "恐龍",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 60.0,
+            "Width": 60.0,
+            "Picture": "dinosaur_right.png",
+            "Rotates": "False",
+            "Uuid": 100532992.0,
+            "X": 53,
+            "Y": 555,
+            "Z": 2.0
+          },
+          "BOSS": {
+            "$Name": "BOSS",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 70.0,
+            "Width": 70.0,
+            "Picture": "boss1_left.png",
+            "Rotates": "False",
+            "Uuid": -466772904.0,
+            "X": 285,
+            "Y": 545,
+            "Z": 2.0
+          },
+          "地板": {
+            "$Name": "地板",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 10.0,
+            "Width": -2.0,
+            "Picture": "a.png",
+            "Uuid": -681178713.0,
+            "Visible": "False",
+            "X": 0,
+            "Y": 610.0
+          },
+          "恐龍HP1": {
+            "$Name": "恐龍HP1",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 18.0,
+            "Width": 100.0,
+            "Picture": "heart_5.png",
+            "Uuid": 1716928179.0,
+            "X": 33.0,
+            "Y": 535
+          },
+          "BOSS_HP": {
+            "$Name": "BOSS_HP",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 10.0,
+            "Width": 100.0,
+            "Picture": "boss_HP_max.png",
+            "Uuid": 988049756.0,
+            "X": 270.0,
+            "Y": 525
+          },
+          "暫存圖像用": {
+            "$Name": "暫存圖像用",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Uuid": 1260480403.0,
+            "Visible": "False",
+            "X": 115.0,
+            "Y": 48.0,
+            "Picture": "boss1_left.png"
+          },
+          "回首頁": {
+            "$Name": "回首頁",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 70.0,
+            "Width": 70.0,
+            "Picture": "house.png",
+            "Uuid": -1807045419.0,
+            "Visible": "False",
+            "X": 90.0,
+            "Y": 151.0
+          },
+          "玩家子彈_1": {
+            "$Name": "玩家子彈_1",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": -209871720.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_2": {
+            "$Name": "玩家子彈_2",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": -1981269150.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_3": {
+            "$Name": "玩家子彈_3",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": -1982654047.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_4": {
+            "$Name": "玩家子彈_4",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": 2050824268.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_5": {
+            "$Name": "玩家子彈_5",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": -173972732.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_6": {
+            "$Name": "玩家子彈_6",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": 836812046.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_7": {
+            "$Name": "玩家子彈_7",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": -1352107920.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_8": {
+            "$Name": "玩家子彈_8",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": 1343253845.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_9": {
+            "$Name": "玩家子彈_9",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": -415891973.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_10": {
+            "$Name": "玩家子彈_10",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": -856510341.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "boss子彈_1": {
+            "$Name": "boss子彈_1",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFF0000FF",
+            "Uuid": 1908771860.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "BOSS攻擊背景": {
+            "$Name": "BOSS攻擊背景",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Uuid": -241270274.0,
+            "Visible": "False",
+            "X": 129.0,
+            "Y": 130.0
+          },
+          "操作區": {
+            "$Name": "操作區",
+            "$Type": "HorizontalArrangement",
+            "$Version": 4.0,
+            "AlignHorizontal": 2.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Width": 400,
+            "Uuid": -58198713.0,
+            "Height": 160
+          },
+          "移動操作": {
+            "$Name": "移動操作",
+            "$Type": "VerticalArrangement",
+            "$Version": 4.0,
+            "AlignHorizontal": 3.0,
+            "AlignVertical": 2.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Height": 160,
+            "Width": 300,
+            "Uuid": 1974273942.0
+          },
+          "向上": {
+            "$Name": "向上",
+            "$Type": "Canvas",
+            "$Version": 15.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Height": 50,
+            "Width": 300,
+            "Uuid": 1050394374.0
+          },
+          "往上鍵": {
+            "$Name": "往上鍵",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 50.0,
+            "Width": 50.0,
+            "Picture": "up.png",
+            "Uuid": 1990804342.0,
+            "X": 175.0,
+            "Y": 0
+          },
+          "水平配置1": {
+            "$Name": "水平配置1",
+            "$Type": "HorizontalArrangement",
+            "$Version": 4.0,
+            "AlignHorizontal": 3.0,
+            "AlignVertical": 2.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Width": -2.0,
+            "Uuid": -86476041.0
+          },
+          "橫向移動": {
+            "$Name": "橫向移動",
+            "$Type": "Canvas",
+            "$Version": 15.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Height": 50,
+            "Width": 300,
+            "Uuid": -665720902.0
+          },
+          "往左鍵": {
+            "$Name": "往左鍵",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 50.0,
+            "Width": 50.0,
+            "Picture": "left.png",
+            "Uuid": 601429558.0,
+            "X": 125.0,
+            "Y": 0
+          },
+          "往右鍵": {
+            "$Name": "往右鍵",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 50.0,
+            "Width": 50.0,
+            "Picture": "right.png",
+            "Uuid": -574740181.0,
+            "X": 225.0,
+            "Y": 0
+          },
+          "向下": {
+            "$Name": "向下",
+            "$Type": "Canvas",
+            "$Version": 15.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Height": 50,
+            "Width": 300,
+            "Uuid": 92591904.0
+          },
+          "往下鍵": {
+            "$Name": "往下鍵",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 50.0,
+            "Width": 50.0,
+            "Picture": "down.png",
+            "Uuid": 2085832812.0,
+            "X": 175.0,
+            "Y": 0
+          },
+          "技能列": {
+            "$Name": "技能列",
+            "$Type": "Canvas",
+            "$Version": 15.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Height": 160,
+            "Width": 100,
+            "Uuid": 1159260336.0
+          },
+          "技能": {
+            "$Name": "技能",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 50.0,
+            "Width": 40.0,
+            "Picture": "skill.png",
+            "Uuid": -1157267905.0,
+            "X": 60.0,
+            "Y": 0
+          },
+          "工具列": {
+            "$Name": "工具列",
+            "$Type": "HorizontalArrangement",
+            "$Version": 4.0,
+            "AlignVertical": 3.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Width": -2.0,
+            "Uuid": 1654396236.0
+          },
+          "返回": {
+            "$Name": "返回",
+            "$Type": "Button",
+            "$Version": 7.0,
+            "Height": 40.0,
+            "Width": 40.0,
+            "Image": "back.png",
+            "Uuid": 397113203.0
+          },
+          "boss攻擊計時器": {
+            "$Name": "boss攻擊計時器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "Uuid": 690072170.0,
+            "TimerInterval": 250.0
+          },
+          "向上移動計時器": {
+            "$Name": "向上移動計時器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "TimerEnabled": "False",
+            "TimerInterval": 10.0,
+            "Uuid": 1856553258.0
+          },
+          "向下移動計時器": {
+            "$Name": "向下移動計時器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "TimerEnabled": "False",
+            "TimerInterval": 10.0,
+            "Uuid": 1349464466.0
+          },
+          "向左移動計時器": {
+            "$Name": "向左移動計時器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "TimerEnabled": "False",
+            "TimerInterval": 10.0,
+            "Uuid": 465103083.0
+          },
+          "向右移動計時器": {
+            "$Name": "向右移動計時器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "TimerEnabled": "False",
+            "TimerInterval": 10.0,
+            "Uuid": -1004467293.0
+          },
+          "旋轉特效角度變化計時器": {
+            "$Name": "旋轉特效角度變化計時器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "TimerInterval": 100,
+            "Uuid": -1759046759.0
+          },
+          "技能計時器": {
+            "$Name": "技能計時器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "TimerEnabled": "False",
+            "TimerInterval": 100.0,
+            "Uuid": -604388882.0
+          },
+          "飛行狀態偵測器": {
+            "$Name": "飛行狀態偵測器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "TimerInterval": 2.0,
+            "Uuid": 2111995948.0
+          },
+          "結算提示": {
+            "$Name": "結算提示",
+            "$Type": "Notifier",
+            "$Version": 6.0,
+            "Uuid": -1723605922.0
+          }
+        }
+      }
+    },
+    "jupiter": {
+      "components": {
+        "story_fight": {
+          "$Name": "story_fight",
+          "$Type": "Form",
+          "$Version": 31.0,
+          "AppName": "app_inventor",
+          "BackgroundImage": "openate_background.jpg",
+          "Theme": "Classic",
+          "Title": "戰鬥",
+          "TitleVisible": "False",
+          "Uuid": 0.0
+        },
+        "畫布1": {
+          "$Name": "畫布1",
+          "$Type": "Canvas",
+          "$Version": 15.0,
+          "BackgroundImage": "danjon_background.jpg.png",
+          "Height": 650,
+          "Width": 400,
+          "Uuid": 358419402.0
+        },
+        "恐龍": {
+          "$Name": "恐龍",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 60.0,
+          "Width": 60.0,
+          "Picture": "dinosaur_right.png",
+          "Rotates": "False",
+          "Uuid": 100532992.0,
+          "X": 53.0,
+          "Y": 555.0,
+          "Z": 2.0
+        },
+        "BOSS": {
+          "$Name": "BOSS",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 70.0,
+          "Width": 70.0,
+          "Picture": "boss3_left.png",
+          "Rotates": "False",
+          "Uuid": -466772904.0,
+          "X": 285.0,
+          "Y": 545.0,
+          "Z": 2.0
+        },
+        "地板": {
+          "$Name": "地板",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 10.0,
+          "Width": -2.0,
+          "Picture": "a.png",
+          "Uuid": -681178713.0,
+          "Visible": "False",
+          "X": 0,
+          "Y": 610.0
+        },
+        "恐龍HP1": {
+          "$Name": "恐龍HP1",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 18.0,
+          "Width": 100.0,
+          "Picture": "heart_5.png",
+          "Uuid": 1716928179.0,
+          "X": 33.0,
+          "Y": 535.0
+        },
+        "BOSS_HP": {
+          "$Name": "BOSS_HP",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 10.0,
+          "Width": 100.0,
+          "Picture": "boss_HP_max.png",
+          "Uuid": 988049756.0,
+          "X": 270.0,
+          "Y": 525.0
+        },
+        "暫存圖像用": {
+          "$Name": "暫存圖像用",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Uuid": 1260480403.0,
+          "Visible": "False",
+          "X": 115.0,
+          "Y": 48.0,
+          "Picture": "boss3_left.png"
+        },
+        "回首頁": {
+          "$Name": "回首頁",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 70.0,
+          "Width": 70.0,
+          "Picture": "house.png",
+          "Uuid": -1807045419.0,
+          "Visible": "False",
+          "X": 90.0,
+          "Y": 151.0
+        },
+        "玩家子彈_1": {
+          "$Name": "玩家子彈_1",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": -209871720.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_2": {
+          "$Name": "玩家子彈_2",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": -1981269150.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_3": {
+          "$Name": "玩家子彈_3",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": -1982654047.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_4": {
+          "$Name": "玩家子彈_4",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": 2050824268.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_5": {
+          "$Name": "玩家子彈_5",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": -173972732.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_6": {
+          "$Name": "玩家子彈_6",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": 836812046.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_7": {
+          "$Name": "玩家子彈_7",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": -1352107920.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_8": {
+          "$Name": "玩家子彈_8",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": 1343253845.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_9": {
+          "$Name": "玩家子彈_9",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": -415891973.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_10": {
+          "$Name": "玩家子彈_10",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": -856510341.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "boss子彈_1": {
+          "$Name": "boss子彈_1",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFF0000FF",
+          "Uuid": 1908771860.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "BOSS攻擊背景": {
+          "$Name": "BOSS攻擊背景",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Uuid": -241270274.0,
+          "Visible": "False",
+          "X": 129.0,
+          "Y": 130.0
+        },
+        "操作區": {
+          "$Name": "操作區",
+          "$Type": "HorizontalArrangement",
+          "$Version": 4.0,
+          "AlignHorizontal": 2.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Width": 400,
+          "Uuid": -58198713.0,
+          "Height": 160
+        },
+        "移動操作": {
+          "$Name": "移動操作",
+          "$Type": "VerticalArrangement",
+          "$Version": 4.0,
+          "AlignHorizontal": 3.0,
+          "AlignVertical": 2.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Height": 160,
+          "Width": 300,
+          "Uuid": 1974273942.0
+        },
+        "向上": {
+          "$Name": "向上",
+          "$Type": "Canvas",
+          "$Version": 15.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Height": 50,
+          "Width": 300,
+          "Uuid": 1050394374.0
+        },
+        "往上鍵": {
+          "$Name": "往上鍵",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 50.0,
+          "Width": 50.0,
+          "Picture": "up.png",
+          "Uuid": 1990804342.0,
+          "X": 175.0,
+          "Y": 0
+        },
+        "水平配置1": {
+          "$Name": "水平配置1",
+          "$Type": "HorizontalArrangement",
+          "$Version": 4.0,
+          "AlignHorizontal": 3.0,
+          "AlignVertical": 2.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Width": -2.0,
+          "Uuid": -86476041.0
+        },
+        "橫向移動": {
+          "$Name": "橫向移動",
+          "$Type": "Canvas",
+          "$Version": 15.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Height": 50,
+          "Width": 300,
+          "Uuid": -665720902.0
+        },
+        "往左鍵": {
+          "$Name": "往左鍵",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 50.0,
+          "Width": 50.0,
+          "Picture": "left.png",
+          "Uuid": 601429558.0,
+          "X": 125.0,
+          "Y": 0
+        },
+        "往右鍵": {
+          "$Name": "往右鍵",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 50.0,
+          "Width": 50.0,
+          "Picture": "right.png",
+          "Uuid": -574740181.0,
+          "X": 225.0,
+          "Y": 0
+        },
+        "向下": {
+          "$Name": "向下",
+          "$Type": "Canvas",
+          "$Version": 15.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Height": 50,
+          "Width": 300,
+          "Uuid": 92591904.0
+        },
+        "往下鍵": {
+          "$Name": "往下鍵",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 50.0,
+          "Width": 50.0,
+          "Picture": "down.png",
+          "Uuid": 2085832812.0,
+          "X": 175.0,
+          "Y": 0
+        },
+        "技能列": {
+          "$Name": "技能列",
+          "$Type": "Canvas",
+          "$Version": 15.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Height": 160,
+          "Width": 100,
+          "Uuid": 1159260336.0
+        },
+        "技能": {
+          "$Name": "技能",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 50.0,
+          "Width": 40.0,
+          "Picture": "skill.png",
+          "Uuid": -1157267905.0,
+          "X": 60.0,
+          "Y": 0
+        },
+        "工具列": {
+          "$Name": "工具列",
+          "$Type": "HorizontalArrangement",
+          "$Version": 4.0,
+          "AlignVertical": 3.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Width": -2.0,
+          "Uuid": 1654396236.0
+        },
+        "返回": {
+          "$Name": "返回",
+          "$Type": "Button",
+          "$Version": 7.0,
+          "Height": 40.0,
+          "Width": 40.0,
+          "Image": "back.png",
+          "Uuid": 397113203.0
+        },
+        "boss攻擊計時器": {
+          "$Name": "boss攻擊計時器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "Uuid": 690072170.0,
+          "TimerInterval": 250.0
+        },
+        "向上移動計時器": {
+          "$Name": "向上移動計時器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "TimerEnabled": "False",
+          "TimerInterval": 10.0,
+          "Uuid": 1856553258.0
+        },
+        "向下移動計時器": {
+          "$Name": "向下移動計時器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "TimerEnabled": "False",
+          "TimerInterval": 10.0,
+          "Uuid": 1349464466.0
+        },
+        "向左移動計時器": {
+          "$Name": "向左移動計時器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "TimerEnabled": "False",
+          "TimerInterval": 10.0,
+          "Uuid": 465103083.0
+        },
+        "向右移動計時器": {
+          "$Name": "向右移動計時器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "TimerEnabled": "False",
+          "TimerInterval": 10.0,
+          "Uuid": -1004467293.0
+        },
+        "旋轉特效角度變化計時器": {
+          "$Name": "旋轉特效角度變化計時器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "TimerInterval": 100,
+          "Uuid": -1759046759.0
+        },
+        "技能計時器": {
+          "$Name": "技能計時器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "TimerEnabled": "False",
+          "TimerInterval": 100.0,
+          "Uuid": -604388882.0
+        },
+        "飛行狀態偵測器": {
+          "$Name": "飛行狀態偵測器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "TimerInterval": 2.0,
+          "Uuid": 2111995948.0
+        },
+        "結算提示": {
+          "$Name": "結算提示",
+          "$Type": "Notifier",
+          "$Version": 6.0,
+          "Uuid": -1723605922.0
+        }
+      },
+      "globals": {
+        "global 旋轉角度計時間隔": 100,
+        "global 初始值清單": [
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "global bossATK": 2.0,
+        "global bossDEF": 1.0,
+        "global 玩家ATK": 1.0,
+        "global 玩家DEF": 0.0,
+        "global 玩家HP": 5.0,
+        "global bossHP": 19.0,
+        "global 小恐龍飛行狀態": 0.0
+      },
+      "presentation": {
+        "purpose": "作品介紹用戰鬥情境，角色位置經使用者授權安排",
+        "components": {
+          "story_fight": {
+            "$Name": "story_fight",
+            "$Type": "Form",
+            "$Version": 31.0,
+            "AppName": "app_inventor",
+            "BackgroundImage": "openate_background.jpg",
+            "Theme": "Classic",
+            "Title": "戰鬥",
+            "TitleVisible": "False",
+            "Uuid": 0.0
+          },
+          "畫布1": {
+            "$Name": "畫布1",
+            "$Type": "Canvas",
+            "$Version": 15.0,
+            "BackgroundImage": "danjon_background.jpg.png",
+            "Height": 650,
+            "Width": 400,
+            "Uuid": 358419402.0
+          },
+          "恐龍": {
+            "$Name": "恐龍",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 60.0,
+            "Width": 60.0,
+            "Picture": "dinosaur_right_fly.png",
+            "Rotates": "False",
+            "Uuid": 100532992.0,
+            "X": 80,
+            "Y": 360,
+            "Z": 2.0
+          },
+          "BOSS": {
+            "$Name": "BOSS",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 70.0,
+            "Width": 70.0,
+            "Picture": "boss3_left.png",
+            "Rotates": "False",
+            "Uuid": -466772904.0,
+            "X": 270,
+            "Y": 475,
+            "Z": 2.0
+          },
+          "地板": {
+            "$Name": "地板",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 10.0,
+            "Width": -2.0,
+            "Picture": "a.png",
+            "Uuid": -681178713.0,
+            "Visible": "False",
+            "X": 0,
+            "Y": 610.0
+          },
+          "恐龍HP1": {
+            "$Name": "恐龍HP1",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 18.0,
+            "Width": 100.0,
+            "Picture": "heart_5.png",
+            "Uuid": 1716928179.0,
+            "X": 60.0,
+            "Y": 340
+          },
+          "BOSS_HP": {
+            "$Name": "BOSS_HP",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 10.0,
+            "Width": 100.0,
+            "Picture": "boss_HP_max.png",
+            "Uuid": 988049756.0,
+            "X": 255.0,
+            "Y": 455
+          },
+          "暫存圖像用": {
+            "$Name": "暫存圖像用",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Uuid": 1260480403.0,
+            "Visible": "False",
+            "X": 115.0,
+            "Y": 48.0,
+            "Picture": "boss3_left.png"
+          },
+          "回首頁": {
+            "$Name": "回首頁",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 70.0,
+            "Width": 70.0,
+            "Picture": "house.png",
+            "Uuid": -1807045419.0,
+            "Visible": "False",
+            "X": 90.0,
+            "Y": 151.0
+          },
+          "玩家子彈_1": {
+            "$Name": "玩家子彈_1",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": -209871720.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_2": {
+            "$Name": "玩家子彈_2",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": -1981269150.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_3": {
+            "$Name": "玩家子彈_3",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": -1982654047.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_4": {
+            "$Name": "玩家子彈_4",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": 2050824268.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_5": {
+            "$Name": "玩家子彈_5",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": -173972732.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_6": {
+            "$Name": "玩家子彈_6",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": 836812046.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_7": {
+            "$Name": "玩家子彈_7",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": -1352107920.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_8": {
+            "$Name": "玩家子彈_8",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": 1343253845.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_9": {
+            "$Name": "玩家子彈_9",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": -415891973.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_10": {
+            "$Name": "玩家子彈_10",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": -856510341.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "boss子彈_1": {
+            "$Name": "boss子彈_1",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFF0000FF",
+            "Uuid": 1908771860.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "BOSS攻擊背景": {
+            "$Name": "BOSS攻擊背景",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Uuid": -241270274.0,
+            "Visible": "False",
+            "X": 129.0,
+            "Y": 130.0
+          },
+          "操作區": {
+            "$Name": "操作區",
+            "$Type": "HorizontalArrangement",
+            "$Version": 4.0,
+            "AlignHorizontal": 2.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Width": 400,
+            "Uuid": -58198713.0,
+            "Height": 160
+          },
+          "移動操作": {
+            "$Name": "移動操作",
+            "$Type": "VerticalArrangement",
+            "$Version": 4.0,
+            "AlignHorizontal": 3.0,
+            "AlignVertical": 2.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Height": 160,
+            "Width": 300,
+            "Uuid": 1974273942.0
+          },
+          "向上": {
+            "$Name": "向上",
+            "$Type": "Canvas",
+            "$Version": 15.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Height": 50,
+            "Width": 300,
+            "Uuid": 1050394374.0
+          },
+          "往上鍵": {
+            "$Name": "往上鍵",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 50.0,
+            "Width": 50.0,
+            "Picture": "up.png",
+            "Uuid": 1990804342.0,
+            "X": 175.0,
+            "Y": 0
+          },
+          "水平配置1": {
+            "$Name": "水平配置1",
+            "$Type": "HorizontalArrangement",
+            "$Version": 4.0,
+            "AlignHorizontal": 3.0,
+            "AlignVertical": 2.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Width": -2.0,
+            "Uuid": -86476041.0
+          },
+          "橫向移動": {
+            "$Name": "橫向移動",
+            "$Type": "Canvas",
+            "$Version": 15.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Height": 50,
+            "Width": 300,
+            "Uuid": -665720902.0
+          },
+          "往左鍵": {
+            "$Name": "往左鍵",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 50.0,
+            "Width": 50.0,
+            "Picture": "left.png",
+            "Uuid": 601429558.0,
+            "X": 125.0,
+            "Y": 0
+          },
+          "往右鍵": {
+            "$Name": "往右鍵",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 50.0,
+            "Width": 50.0,
+            "Picture": "right.png",
+            "Uuid": -574740181.0,
+            "X": 225.0,
+            "Y": 0
+          },
+          "向下": {
+            "$Name": "向下",
+            "$Type": "Canvas",
+            "$Version": 15.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Height": 50,
+            "Width": 300,
+            "Uuid": 92591904.0
+          },
+          "往下鍵": {
+            "$Name": "往下鍵",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 50.0,
+            "Width": 50.0,
+            "Picture": "down.png",
+            "Uuid": 2085832812.0,
+            "X": 175.0,
+            "Y": 0
+          },
+          "技能列": {
+            "$Name": "技能列",
+            "$Type": "Canvas",
+            "$Version": 15.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Height": 160,
+            "Width": 100,
+            "Uuid": 1159260336.0
+          },
+          "技能": {
+            "$Name": "技能",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 50.0,
+            "Width": 40.0,
+            "Picture": "skill.png",
+            "Uuid": -1157267905.0,
+            "X": 60.0,
+            "Y": 0
+          },
+          "工具列": {
+            "$Name": "工具列",
+            "$Type": "HorizontalArrangement",
+            "$Version": 4.0,
+            "AlignVertical": 3.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Width": -2.0,
+            "Uuid": 1654396236.0
+          },
+          "返回": {
+            "$Name": "返回",
+            "$Type": "Button",
+            "$Version": 7.0,
+            "Height": 40.0,
+            "Width": 40.0,
+            "Image": "back.png",
+            "Uuid": 397113203.0
+          },
+          "boss攻擊計時器": {
+            "$Name": "boss攻擊計時器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "Uuid": 690072170.0,
+            "TimerInterval": 250.0
+          },
+          "向上移動計時器": {
+            "$Name": "向上移動計時器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "TimerEnabled": "False",
+            "TimerInterval": 10.0,
+            "Uuid": 1856553258.0
+          },
+          "向下移動計時器": {
+            "$Name": "向下移動計時器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "TimerEnabled": "False",
+            "TimerInterval": 10.0,
+            "Uuid": 1349464466.0
+          },
+          "向左移動計時器": {
+            "$Name": "向左移動計時器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "TimerEnabled": "False",
+            "TimerInterval": 10.0,
+            "Uuid": 465103083.0
+          },
+          "向右移動計時器": {
+            "$Name": "向右移動計時器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "TimerEnabled": "False",
+            "TimerInterval": 10.0,
+            "Uuid": -1004467293.0
+          },
+          "旋轉特效角度變化計時器": {
+            "$Name": "旋轉特效角度變化計時器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "TimerInterval": 100,
+            "Uuid": -1759046759.0
+          },
+          "技能計時器": {
+            "$Name": "技能計時器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "TimerEnabled": "False",
+            "TimerInterval": 100.0,
+            "Uuid": -604388882.0
+          },
+          "飛行狀態偵測器": {
+            "$Name": "飛行狀態偵測器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "TimerInterval": 2.0,
+            "Uuid": 2111995948.0
+          },
+          "結算提示": {
+            "$Name": "結算提示",
+            "$Type": "Notifier",
+            "$Version": 6.0,
+            "Uuid": -1723605922.0
+          }
+        }
+      }
+    },
+    "sun": {
+      "components": {
+        "story_fight": {
+          "$Name": "story_fight",
+          "$Type": "Form",
+          "$Version": 31.0,
+          "AppName": "app_inventor",
+          "BackgroundImage": "openate_background.jpg",
+          "Theme": "Classic",
+          "Title": "戰鬥",
+          "TitleVisible": "False",
+          "Uuid": 0.0
+        },
+        "畫布1": {
+          "$Name": "畫布1",
+          "$Type": "Canvas",
+          "$Version": 15.0,
+          "BackgroundImage": "fire_background.jpg",
+          "Height": 650,
+          "Width": 400,
+          "Uuid": 358419402.0
+        },
+        "恐龍": {
+          "$Name": "恐龍",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 60.0,
+          "Width": 60.0,
+          "Picture": "dinosaur_right.png",
+          "Rotates": "False",
+          "Uuid": 100532992.0,
+          "X": 53.0,
+          "Y": 555.0,
+          "Z": 2.0
+        },
+        "BOSS": {
+          "$Name": "BOSS",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 70.0,
+          "Width": 90.0,
+          "Picture": "red_boss_fly_left.png",
+          "Rotates": "False",
+          "Uuid": -466772904.0,
+          "X": 285.0,
+          "Y": 545.0,
+          "Z": 2.0
+        },
+        "地板": {
+          "$Name": "地板",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 10.0,
+          "Width": -2.0,
+          "Picture": "a.png",
+          "Uuid": -681178713.0,
+          "Visible": "False",
+          "X": 0,
+          "Y": 610.0
+        },
+        "恐龍HP1": {
+          "$Name": "恐龍HP1",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 18.0,
+          "Width": 100.0,
+          "Picture": "heart_5.png",
+          "Uuid": 1716928179.0,
+          "X": 33.0,
+          "Y": 535.0
+        },
+        "BOSS_HP": {
+          "$Name": "BOSS_HP",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 10.0,
+          "Width": 100.0,
+          "Picture": "boss_HP_max.png",
+          "Uuid": 988049756.0,
+          "X": 280.0,
+          "Y": 525.0
+        },
+        "暫存圖像用": {
+          "$Name": "暫存圖像用",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Uuid": 1260480403.0,
+          "Visible": "False",
+          "X": 115.0,
+          "Y": 48.0,
+          "Picture": "red_boss_fly_left.png"
+        },
+        "回首頁": {
+          "$Name": "回首頁",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 70.0,
+          "Width": 70.0,
+          "Picture": "house.png",
+          "Uuid": -1807045419.0,
+          "Visible": "False",
+          "X": 90.0,
+          "Y": 151.0
+        },
+        "玩家子彈_1": {
+          "$Name": "玩家子彈_1",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": -209871720.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_2": {
+          "$Name": "玩家子彈_2",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": -1981269150.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_3": {
+          "$Name": "玩家子彈_3",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": -1982654047.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_4": {
+          "$Name": "玩家子彈_4",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": 2050824268.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_5": {
+          "$Name": "玩家子彈_5",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": -173972732.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_6": {
+          "$Name": "玩家子彈_6",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": 836812046.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_7": {
+          "$Name": "玩家子彈_7",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": -1352107920.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_8": {
+          "$Name": "玩家子彈_8",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": 1343253845.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_9": {
+          "$Name": "玩家子彈_9",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": -415891973.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "玩家子彈_10": {
+          "$Name": "玩家子彈_10",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFFFF0000",
+          "Uuid": -856510341.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "boss子彈_1": {
+          "$Name": "boss子彈_1",
+          "$Type": "Ball",
+          "$Version": 8.0,
+          "PaintColor": "&HFF0000FF",
+          "Uuid": 1908771860.0,
+          "Visible": "False",
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "BOSS攻擊背景": {
+          "$Name": "BOSS攻擊背景",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Uuid": -241270274.0,
+          "Visible": "False",
+          "X": 129.0,
+          "Y": 130.0
+        },
+        "操作區": {
+          "$Name": "操作區",
+          "$Type": "HorizontalArrangement",
+          "$Version": 4.0,
+          "AlignHorizontal": 2.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Width": 400,
+          "Uuid": -58198713.0,
+          "Height": 160
+        },
+        "移動操作": {
+          "$Name": "移動操作",
+          "$Type": "VerticalArrangement",
+          "$Version": 4.0,
+          "AlignHorizontal": 3.0,
+          "AlignVertical": 2.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Height": 160,
+          "Width": 300,
+          "Uuid": 1974273942.0
+        },
+        "向上": {
+          "$Name": "向上",
+          "$Type": "Canvas",
+          "$Version": 15.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Height": 50,
+          "Width": 300,
+          "Uuid": 1050394374.0
+        },
+        "往上鍵": {
+          "$Name": "往上鍵",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 50.0,
+          "Width": 50.0,
+          "Picture": "up.png",
+          "Uuid": 1990804342.0,
+          "X": 175.0,
+          "Y": 0
+        },
+        "水平配置1": {
+          "$Name": "水平配置1",
+          "$Type": "HorizontalArrangement",
+          "$Version": 4.0,
+          "AlignHorizontal": 3.0,
+          "AlignVertical": 2.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Width": -2.0,
+          "Uuid": -86476041.0
+        },
+        "橫向移動": {
+          "$Name": "橫向移動",
+          "$Type": "Canvas",
+          "$Version": 15.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Height": 50,
+          "Width": 300,
+          "Uuid": -665720902.0
+        },
+        "往左鍵": {
+          "$Name": "往左鍵",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 50.0,
+          "Width": 50.0,
+          "Picture": "left.png",
+          "Uuid": 601429558.0,
+          "X": 125.0,
+          "Y": 0
+        },
+        "往右鍵": {
+          "$Name": "往右鍵",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 50.0,
+          "Width": 50.0,
+          "Picture": "right.png",
+          "Uuid": -574740181.0,
+          "X": 225.0,
+          "Y": 0
+        },
+        "向下": {
+          "$Name": "向下",
+          "$Type": "Canvas",
+          "$Version": 15.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Height": 50,
+          "Width": 300,
+          "Uuid": 92591904.0
+        },
+        "往下鍵": {
+          "$Name": "往下鍵",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 50.0,
+          "Width": 50.0,
+          "Picture": "down.png",
+          "Uuid": 2085832812.0,
+          "X": 175.0,
+          "Y": 0
+        },
+        "技能列": {
+          "$Name": "技能列",
+          "$Type": "Canvas",
+          "$Version": 15.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Height": 160,
+          "Width": 100,
+          "Uuid": 1159260336.0
+        },
+        "技能": {
+          "$Name": "技能",
+          "$Type": "ImageSprite",
+          "$Version": 8.0,
+          "Height": 50.0,
+          "Width": 40.0,
+          "Picture": "skill.png",
+          "Uuid": -1157267905.0,
+          "X": 60.0,
+          "Y": 0
+        },
+        "工具列": {
+          "$Name": "工具列",
+          "$Type": "HorizontalArrangement",
+          "$Version": 4.0,
+          "AlignVertical": 3.0,
+          "BackgroundColor": "&H00FFFFFF",
+          "Width": -2.0,
+          "Uuid": 1654396236.0
+        },
+        "返回": {
+          "$Name": "返回",
+          "$Type": "Button",
+          "$Version": 7.0,
+          "Height": 40.0,
+          "Width": 40.0,
+          "Image": "back.png",
+          "Uuid": 397113203.0
+        },
+        "boss攻擊計時器": {
+          "$Name": "boss攻擊計時器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "Uuid": 690072170.0,
+          "TimerInterval": 250.0
+        },
+        "向上移動計時器": {
+          "$Name": "向上移動計時器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "TimerEnabled": "False",
+          "TimerInterval": 10.0,
+          "Uuid": 1856553258.0
+        },
+        "向下移動計時器": {
+          "$Name": "向下移動計時器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "TimerEnabled": "False",
+          "TimerInterval": 10.0,
+          "Uuid": 1349464466.0
+        },
+        "向左移動計時器": {
+          "$Name": "向左移動計時器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "TimerEnabled": "False",
+          "TimerInterval": 10.0,
+          "Uuid": 465103083.0
+        },
+        "向右移動計時器": {
+          "$Name": "向右移動計時器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "TimerEnabled": "False",
+          "TimerInterval": 10.0,
+          "Uuid": -1004467293.0
+        },
+        "旋轉特效角度變化計時器": {
+          "$Name": "旋轉特效角度變化計時器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "TimerInterval": 100,
+          "Uuid": -1759046759.0
+        },
+        "技能計時器": {
+          "$Name": "技能計時器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "TimerEnabled": "False",
+          "TimerInterval": 100.0,
+          "Uuid": -604388882.0
+        },
+        "飛行狀態偵測器": {
+          "$Name": "飛行狀態偵測器",
+          "$Type": "Clock",
+          "$Version": 4.0,
+          "TimerInterval": 2.0,
+          "Uuid": 2111995948.0
+        },
+        "結算提示": {
+          "$Name": "結算提示",
+          "$Type": "Notifier",
+          "$Version": 6.0,
+          "Uuid": -1723605922.0
+        }
+      },
+      "globals": {
+        "global 旋轉角度計時間隔": 100,
+        "global 初始值清單": [
+          0,
+          3,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "global bossATK": 3.0,
+        "global bossDEF": 2.0,
+        "global 玩家ATK": 1.0,
+        "global 玩家DEF": 0.0,
+        "global 玩家HP": 5.0,
+        "global bossHP": 19.0,
+        "global 小恐龍飛行狀態": 0.0
+      },
+      "presentation": {
+        "purpose": "作品介紹用戰鬥情境，角色位置經使用者授權安排",
+        "components": {
+          "story_fight": {
+            "$Name": "story_fight",
+            "$Type": "Form",
+            "$Version": 31.0,
+            "AppName": "app_inventor",
+            "BackgroundImage": "openate_background.jpg",
+            "Theme": "Classic",
+            "Title": "戰鬥",
+            "TitleVisible": "False",
+            "Uuid": 0.0
+          },
+          "畫布1": {
+            "$Name": "畫布1",
+            "$Type": "Canvas",
+            "$Version": 15.0,
+            "BackgroundImage": "fire_background.jpg",
+            "Height": 650,
+            "Width": 400,
+            "Uuid": 358419402.0
+          },
+          "恐龍": {
+            "$Name": "恐龍",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 60.0,
+            "Width": 60.0,
+            "Picture": "dinosaur_left_fly.png",
+            "Rotates": "False",
+            "Uuid": 100532992.0,
+            "X": 225,
+            "Y": 245,
+            "Z": 2.0
+          },
+          "BOSS": {
+            "$Name": "BOSS",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 70.0,
+            "Width": 90.0,
+            "Picture": "red_boss_fly_right.png",
+            "Rotates": "False",
+            "Uuid": -466772904.0,
+            "X": 70,
+            "Y": 420,
+            "Z": 2.0
+          },
+          "地板": {
+            "$Name": "地板",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 10.0,
+            "Width": -2.0,
+            "Picture": "a.png",
+            "Uuid": -681178713.0,
+            "Visible": "False",
+            "X": 0,
+            "Y": 610.0
+          },
+          "恐龍HP1": {
+            "$Name": "恐龍HP1",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 18.0,
+            "Width": 100.0,
+            "Picture": "heart_5.png",
+            "Uuid": 1716928179.0,
+            "X": 205.0,
+            "Y": 225
+          },
+          "BOSS_HP": {
+            "$Name": "BOSS_HP",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 10.0,
+            "Width": 100.0,
+            "Picture": "boss_HP_max.png",
+            "Uuid": 988049756.0,
+            "X": 65.0,
+            "Y": 400
+          },
+          "暫存圖像用": {
+            "$Name": "暫存圖像用",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Uuid": 1260480403.0,
+            "Visible": "False",
+            "X": 115.0,
+            "Y": 48.0,
+            "Picture": "red_boss_fly_left.png"
+          },
+          "回首頁": {
+            "$Name": "回首頁",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 70.0,
+            "Width": 70.0,
+            "Picture": "house.png",
+            "Uuid": -1807045419.0,
+            "Visible": "False",
+            "X": 90.0,
+            "Y": 151.0
+          },
+          "玩家子彈_1": {
+            "$Name": "玩家子彈_1",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": -209871720.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_2": {
+            "$Name": "玩家子彈_2",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": -1981269150.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_3": {
+            "$Name": "玩家子彈_3",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": -1982654047.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_4": {
+            "$Name": "玩家子彈_4",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": 2050824268.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_5": {
+            "$Name": "玩家子彈_5",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": -173972732.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_6": {
+            "$Name": "玩家子彈_6",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": 836812046.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_7": {
+            "$Name": "玩家子彈_7",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": -1352107920.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_8": {
+            "$Name": "玩家子彈_8",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": 1343253845.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_9": {
+            "$Name": "玩家子彈_9",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": -415891973.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "玩家子彈_10": {
+            "$Name": "玩家子彈_10",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFFFF0000",
+            "Uuid": -856510341.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "boss子彈_1": {
+            "$Name": "boss子彈_1",
+            "$Type": "Ball",
+            "$Version": 8.0,
+            "PaintColor": "&HFF0000FF",
+            "Uuid": 1908771860.0,
+            "Visible": "False",
+            "X": 0.0,
+            "Y": 0.0
+          },
+          "BOSS攻擊背景": {
+            "$Name": "BOSS攻擊背景",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Uuid": -241270274.0,
+            "Visible": "False",
+            "X": 129.0,
+            "Y": 130.0
+          },
+          "操作區": {
+            "$Name": "操作區",
+            "$Type": "HorizontalArrangement",
+            "$Version": 4.0,
+            "AlignHorizontal": 2.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Width": 400,
+            "Uuid": -58198713.0,
+            "Height": 160
+          },
+          "移動操作": {
+            "$Name": "移動操作",
+            "$Type": "VerticalArrangement",
+            "$Version": 4.0,
+            "AlignHorizontal": 3.0,
+            "AlignVertical": 2.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Height": 160,
+            "Width": 300,
+            "Uuid": 1974273942.0
+          },
+          "向上": {
+            "$Name": "向上",
+            "$Type": "Canvas",
+            "$Version": 15.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Height": 50,
+            "Width": 300,
+            "Uuid": 1050394374.0
+          },
+          "往上鍵": {
+            "$Name": "往上鍵",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 50.0,
+            "Width": 50.0,
+            "Picture": "up.png",
+            "Uuid": 1990804342.0,
+            "X": 175.0,
+            "Y": 0
+          },
+          "水平配置1": {
+            "$Name": "水平配置1",
+            "$Type": "HorizontalArrangement",
+            "$Version": 4.0,
+            "AlignHorizontal": 3.0,
+            "AlignVertical": 2.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Width": -2.0,
+            "Uuid": -86476041.0
+          },
+          "橫向移動": {
+            "$Name": "橫向移動",
+            "$Type": "Canvas",
+            "$Version": 15.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Height": 50,
+            "Width": 300,
+            "Uuid": -665720902.0
+          },
+          "往左鍵": {
+            "$Name": "往左鍵",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 50.0,
+            "Width": 50.0,
+            "Picture": "left.png",
+            "Uuid": 601429558.0,
+            "X": 125.0,
+            "Y": 0
+          },
+          "往右鍵": {
+            "$Name": "往右鍵",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 50.0,
+            "Width": 50.0,
+            "Picture": "right.png",
+            "Uuid": -574740181.0,
+            "X": 225.0,
+            "Y": 0
+          },
+          "向下": {
+            "$Name": "向下",
+            "$Type": "Canvas",
+            "$Version": 15.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Height": 50,
+            "Width": 300,
+            "Uuid": 92591904.0
+          },
+          "往下鍵": {
+            "$Name": "往下鍵",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 50.0,
+            "Width": 50.0,
+            "Picture": "down.png",
+            "Uuid": 2085832812.0,
+            "X": 175.0,
+            "Y": 0
+          },
+          "技能列": {
+            "$Name": "技能列",
+            "$Type": "Canvas",
+            "$Version": 15.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Height": 160,
+            "Width": 100,
+            "Uuid": 1159260336.0
+          },
+          "技能": {
+            "$Name": "技能",
+            "$Type": "ImageSprite",
+            "$Version": 8.0,
+            "Height": 50.0,
+            "Width": 40.0,
+            "Picture": "skill.png",
+            "Uuid": -1157267905.0,
+            "X": 60.0,
+            "Y": 0
+          },
+          "工具列": {
+            "$Name": "工具列",
+            "$Type": "HorizontalArrangement",
+            "$Version": 4.0,
+            "AlignVertical": 3.0,
+            "BackgroundColor": "&H00FFFFFF",
+            "Width": -2.0,
+            "Uuid": 1654396236.0
+          },
+          "返回": {
+            "$Name": "返回",
+            "$Type": "Button",
+            "$Version": 7.0,
+            "Height": 40.0,
+            "Width": 40.0,
+            "Image": "back.png",
+            "Uuid": 397113203.0
+          },
+          "boss攻擊計時器": {
+            "$Name": "boss攻擊計時器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "Uuid": 690072170.0,
+            "TimerInterval": 250.0
+          },
+          "向上移動計時器": {
+            "$Name": "向上移動計時器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "TimerEnabled": "False",
+            "TimerInterval": 10.0,
+            "Uuid": 1856553258.0
+          },
+          "向下移動計時器": {
+            "$Name": "向下移動計時器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "TimerEnabled": "False",
+            "TimerInterval": 10.0,
+            "Uuid": 1349464466.0
+          },
+          "向左移動計時器": {
+            "$Name": "向左移動計時器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "TimerEnabled": "False",
+            "TimerInterval": 10.0,
+            "Uuid": 465103083.0
+          },
+          "向右移動計時器": {
+            "$Name": "向右移動計時器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "TimerEnabled": "False",
+            "TimerInterval": 10.0,
+            "Uuid": -1004467293.0
+          },
+          "旋轉特效角度變化計時器": {
+            "$Name": "旋轉特效角度變化計時器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "TimerInterval": 100,
+            "Uuid": -1759046759.0
+          },
+          "技能計時器": {
+            "$Name": "技能計時器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "TimerEnabled": "False",
+            "TimerInterval": 100.0,
+            "Uuid": -604388882.0
+          },
+          "飛行狀態偵測器": {
+            "$Name": "飛行狀態偵測器",
+            "$Type": "Clock",
+            "$Version": 4.0,
+            "TimerInterval": 2.0,
+            "Uuid": 2111995948.0
+          },
+          "結算提示": {
+            "$Name": "結算提示",
+            "$Type": "Notifier",
+            "$Version": 6.0,
+            "Uuid": -1723605922.0
+          }
+        }
+      }
+    }
+  }
+}

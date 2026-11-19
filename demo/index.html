@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>基因狂暴 恐龍復甦 原作互動還原</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eef1f2;color:#182c35;font:16px/1.7 "Microsoft JhengHei",sans-serif}main{max-width:980px;margin:auto;padding:32px 20px;display:grid;grid-template-columns:1fr 420px;gap:44px}h1{font-size:28px;line-height:1.4}a{color:#176651}canvas{width:100%;height:auto;display:block;background:white;touch-action:none;border:1px solid #bbc5c8}button{font:inherit;padding:8px 20px;cursor:pointer}p{max-width:430px}.note{font-size:14px;color:#51626a}#status{min-height:4em}@media(max-width:760px){main{display:block;padding:20px}canvas{max-width:400px;margin:auto}aside{margin-bottom:24px}}
+</style>
+<main><aside><a href="../README.md">作品介紹</a><h1>基因狂暴 恐龍復甦</h1><p>依原始 SCM 配置與 BKY 事件重製的互動展示。</p><p>可按開始、劇情水晶、星球、關閉、商店與造型按鈕。按住原有圖片按鈕時會顯示程式指定的圖片。</p><p id="status" aria-live="polite"></p><button id="reset">重設展示</button><p class="note">進入戰鬥後，可按住方向鍵移動、點擊戰鬥區射擊，或按住技能鍵自動連射。展示直接讀取匯出的 BKY 事件與原始素材。Android 原生提示以瀏覽器提示框呈現，字型與裝置排版可能不同。</p><p><a href="../docs/基因狂暴%20恐龍復甦_作品介紹.pdf">作品說明 PDF</a></p></aside>
+<section><canvas id="game" width="400" height="850" aria-label="原作互動還原"></canvas></section></main>
+<script src="project-data.js"></script><script src="battle-program.js"></script><script src="battle-engine.js"></script><script src="replay.js"></script></html>
