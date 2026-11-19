@@ -55,17 +55,6 @@
 | 草地背景與獨狼頭目 | 遺跡背景與史塔克頭目 | 火焰背景與飛行頭目 |
 
 初始玩家採原預設小恐龍，HP 為 5，頭目 HP 為 19。展示圖的角色位置依關卡安排，血量圖片維持在角色上方 20 像素。
-
-### 原始控制區配置
-
-以 400 × 850 的內容區還原，戰鬥畫布高 650，操作區高 160，返回列高 40。原程式隱藏戰鬥標題列。
-
-操作面板保留上下左右四個方向鍵、右側技能鍵與下方返回按鈕。還原時計算 BKY 設定座標後，也套用 App Inventor 的邊界修正，將圖像精靈移回各自的小畫布範圍內，讓按鈕完整顯示。這項處理依循 Sprite 的 registerChange、hitEdgeAbstract 與 MoveIntoBounds 呼叫流程。[App Inventor 原始碼](https://github.com/mit-cml/appinventor-sources/blob/master/appinventor/components/src/com/google/appinventor/components/runtime/Sprite.java)
-
-Android 原生排版與實機位置仍待 APK 核對。
-
-可在 [battle-source.json](demo/battle-source.json) 查看 SCM、三關計算後的元件屬性及全域狀態，presentation 欄位另記錄介紹圖的角色配置。
-
 - 方向鍵控制小恐龍上下左右移動。
 - 點擊戰鬥區射擊，攻擊頭目。
 - 技能鍵用來強化攻擊手段。
@@ -88,36 +77,3 @@ Android 原生排版與實機位置仍待 APK 核對。
 ## 作品說明文件
 
 [閱讀圖文作品說明 PDF](docs/基因狂暴%20恐龍復甦_作品介紹.pdf)
-
-## 圖片來源
-
-主畫面、選關及商店圖片依原始專案靜態配置還原。戰鬥介面由 AIA 素材與 SCM、BKY 的計算狀態組合。互動展示依 BKY 的指定事件重新實作。戰鬥部分由匯出的 BKY 積木執行初始化、移動、射擊、技能、頭目計時及碰撞事件，角色開場位置採介紹用配置。Android 原生提示使用瀏覽器提示框呈現，外觀依瀏覽器而定。
-
-此資料夾包含 README、介面 PNG 與 PDF，可作為 GitHub 的作品介紹內容。尚未指定授權條款。
-
-## 還原依據與檢查範圍
-
-| 原始檔案及事件 | 還原內容 |
-| --- | --- |
-| Screen1 Initialize、動畫 Timer | 開始按鈕置中、Speed 1、25 ms 計數改變 Heading 270／90 |
-| Screen1 開始 TouchDown／TouchUp | 按下換圖、放開恢復並進入主線 |
-| Screen1 劇情水晶、逐字出現故事內容 Timer | 切換故事配置、每 100 ms 增加一字 |
-| story_line Initialize、星球 TouchUp、name 程序 | 隱藏或開啟原始關卡視窗、限制其他星球操作 |
-| story_line 關閉、進入事件 | 原始按下圖片、關閉視窗或進入戰鬥 |
-| shop Initialize、造型一按鈕 TouchDown | DNA 條件、購買扣款、持有狀態及第二次點選切換 |
-
-展示以 400 × 820 的表單內容區為基準，另加 30 像素標題列。原生配置、字型與 Notifier 外觀採瀏覽器呈現。ImageSprite 的 Interval 在 SCM 中未明寫，展示採 100 ms 預設值，因此浮動的精確相位仍需實機核對。
-
-已檢查初始化、關卡視窗、鎖關、DNA 不足、原 GM 資料、購買後尚未切換、再次點選切換及逐字計時的狀態分支。已檢查三關移動速度、按鍵放開停動、子彈速度與間隔、第一顆子彈的原有位置行為，以及技能按住連射與放開停止。瀏覽器實際操作與 APK 對照仍待驗證。GIF 重播會重新開始展示，原程式則依返回與切換事件繼續處理。
-
-## 戰鬥動畫的還原方式
-
-`demo/battle-program.js` 保存由 AIA 匯出的原始戰鬥積木結構及區塊 ID。`battle-engine.js` 執行其變數、分支、程序、元件屬性與事件。`battle-animation-trace.json` 記錄各段的輸入順序、執行區塊及結束狀態，方便與 BKY 對照。
-
-子彈半徑採 Ball 元件預設的 5 像素，未指定的圖像精靈 Interval 採 100 毫秒。畫布超界時會把精靈移回邊界內。[App Inventor Ball 原始碼](https://github.com/mit-cml/appinventor-sources/blob/master/appinventor/components/src/com/google/appinventor/components/runtime/Ball.java)、[Sprite 原始碼](https://github.com/mit-cml/appinventor-sources/blob/master/appinventor/components/src/com/google/appinventor/components/runtime/Sprite.java)
-
-還原保留原積木的特殊寫法。例如第一顆玩家子彈的發射分支省略 MoveTo，會沿用當時位置，再依原有旋轉、移動及回收程序處理。
-
-原檔的「暫停狀態」宣告標記為停用，但仍被其他事件引用。展示採用該宣告原本的值 0 初始化此變數。這項相容處理與 Android 的精確事件排程仍需 APK 對照。
-
-引擎以 2 毫秒步進處理計時與球體、角色矩形的碰撞，頭目的亂數以固定種子重播。GIF 使用同一份積木及引擎輸出狀態，再以原始圖片合成。操作順序、亂數種子及開場位置屬於展示設定，動作、傷害與換圖取自原程式。尚未完成瀏覽器及 APK 的並排實機驗證。
